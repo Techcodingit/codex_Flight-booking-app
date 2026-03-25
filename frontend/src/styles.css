@@ -1,0 +1,21 @@
+:root { font-family: Inter, Arial, sans-serif; color: #0c2e63; }
+body { margin: 0; background: #f3f8ff; }
+.shell { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+.sidebar { background: linear-gradient(180deg, #0a4da3, #1073dc); color: white; padding: 20px; }
+.sidebar nav { display: grid; gap: 8px; margin: 20px 0; }
+.sidebar a { color: white; text-decoration: none; padding: 8px; border-radius: 8px; }
+.sidebar a.active, .sidebar a:hover { background: rgba(255, 255, 255, 0.2); }
+main { padding: 24px; }
+.card { background: white; border-radius: 14px; padding: 20px; box-shadow: 0 6px 20px rgba(16, 115, 220, .15); }
+.center { width: min(600px, 92%); margin: 40px auto; }
+input, select, textarea, button { width: 100%; padding: 10px; margin: 8px 0; border-radius: 8px; border: 1px solid #b8d5fb; }
+.row { display: flex; gap: 12px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.btn { background: #0a4da3; color: #fff; border: none; cursor: pointer; }
+.btn.ghost { background: #fff; color: #0a4da3; border: 1px solid #0a4da3; }
+.error { color: #cf0f47; }
+.user-card { margin-top: auto; font-size: 14px; }
+@media (max-width: 800px) {
+  .shell { grid-template-columns: 1fr; }
+  .grid3 { grid-template-columns: 1fr; }
+}
